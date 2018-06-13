@@ -1,0 +1,48 @@
+This program is compiled by Twilight-Dream-Of-Magic
+这个程序由 Twilight-Dream-Of-Magic 构建编译
+
+Warning: This EXE program can only run on the DOS command line!
+警告：这个EXE程序只能在DOS命令行上运行！
+
+Prompt Info:Use the syntax of the command for this program
+提示信息：使用这个程序的命令的语法
+
+
+
+%*% = Variable Description
+* = Any character name
+
+%*% = 变量说明
+* = 任何字符名
+
+
+
+Command: /HELP or /help or -DISPLAYHELP or -displayhelp or --DISPLAYCOMMANDHELP or --displaycommandhelp
+Function: Show command help for this program (Show This Program Command Help)
+
+命令: /HELP or /help or -DISPLAYHELP or -displayhelp or --DISPLAYCOMMANDHELP or --displaycommandhelp
+功能: 显示这个程序的命令帮助
+
+
+
+Command: -WINOFF or -winoff or --POWEROFF or --poweroff
+Function: Stop the Windows system and turn off the power. (Windows Shutdown)
+
+命令: -WINOFF 或 -winoff 或 --POWEROFF 或 --poweroff
+功能: 停止Windows系统，关闭电源
+
+
+
+Command: -WINREBOOT or -winreboot or --REBOOTSTRAP or --rebootstrap
+Function: Restart boot Windows system. (Windows Restart)
+
+命令: -WINREBOOT 或 -winreboot 或 --REBOOTSTRAP 或 --rebootstrap
+功能: 重启Windows系统
+
+
+
+Command: -WINLOCK or -winlock or --LOGOUTUSER or --logoutuser
+Function: Windows system log out the current user. (Windows Logout User)
+
+命令: -WINLOCK 或 -winlock 或 --LOGOUTUSER 或 --logoutuser
+功能: Windows系统注销当前用户
