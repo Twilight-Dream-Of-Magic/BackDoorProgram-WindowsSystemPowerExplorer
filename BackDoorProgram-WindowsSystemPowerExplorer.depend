@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1529048493 source:e:\user_development_data\c c++ c# file\c++\code block ide\backdoorprogram-windowssystempowerexplorer\backdoorprogram-windowssystempowerexplorer.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+

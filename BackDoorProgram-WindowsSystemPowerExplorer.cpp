@@ -159,83 +159,90 @@ void WidowsSystemLogoutUser()
 int main(int argc, char* argv[])
 {
 
-	if(!strcmp(argv[1],"-WINOFF"))
+	if(argc == 2 && strcmp(argv[1],"-WINOFF") == 0)
 	{
 		WidowsSystemShutDown();
 	}
-	if(!strcmp(argv[1],"-WINREBOOT"))
+	if(argc == 2 && strcmp(argv[1],"-WINREBOOT") == 0)
 	{
 		WidowsSystemResetBoot();
 	}
-	if(!strcmp(argv[1],"-WINLOCK"))
+	if(argc == 2 && strcmp(argv[1],"-WINLOCK") == 0)
 	{
 		WidowsSystemLogoutUser();
 	}
 
-	if(!strcmp(argv[1],"-winoff"))
+	if(argc == 2 && strcmp(argv[1],"-winoff") == 0)
 	{
 		WidowsSystemShutDown();
 	}
-	if(!strcmp(argv[1],"-winreboot"))
+	if(argc == 2 && strcmp(argv[1],"-winreboot") == 0)
 	{
 		WidowsSystemResetBoot();
 	}
-	if(!strcmp(argv[1],"-winlock"))
+	if(argc == 2 && strcmp(argv[1],"-winlock") == 0)
 	{
 		WidowsSystemLogoutUser();
 	}
 
-	if(!strcmp(argv[1],"--POWEROFF"))
+	if(argc == 2 && strcmp(argv[1],"--POWEROFF") == 0)
 	{
 		WidowsSystemShutDown();
 	}
-	if(!strcmp(argv[1],"--REBOOTSTRAP"))
+	if(argc == 2 && strcmp(argv[1],"--REBOOTSTRAP") == 0)
 	{
 		WidowsSystemResetBoot();
 	}
-	if(!strcmp(argv[1],"--LOGOUTUSER"))
+	if(argc == 2 && strcmp(argv[1],"--LOGOUTUSER") == 0)
 	{
 		WidowsSystemLogoutUser();
 	}
 
-	if(!strcmp(argv[1],"--poweroff"))
+	if(argc == 2 && strcmp(argv[1],"--poweroff") == 0)
 	{
 		WidowsSystemShutDown();
 	}
-	if(!strcmp(argv[1],"--rebootstrap"))
+	if(argc == 2 && strcmp(argv[1],"--rebootstrap") == 0)
 	{
 		WidowsSystemResetBoot();
 	}
-	if(!strcmp(argv[1],"--logoutuser"))
+	if(argc == 2 && strcmp(argv[1],"--logoutuser") == 0)
 	{
 		WidowsSystemLogoutUser();
 	}
 
-	if(argc = 2 && strcmp(argv[1],"/HELP") == 0)
+	if(argc == 2 && strcmp(argv[1],"/HELP") == 0)
 	{
 		DisplayProgramHelp();
 	}
-	if(argc = 2 && strcmp(argv[1],"-DISPLAYHELP") == 0)
+	if(argc == 2 && strcmp(argv[1],"-DISPLAYHELP") == 0)
 	{
 		DisplayProgramHelp();
 	}
-	if(argc = 2 && strcmp(argv[1],"--DISPLAYCOMMANDHELP") == 0)
+	if(argc == 2 && strcmp(argv[1],"--DISPLAYCOMMANDHELP") == 0)
 	{
 		DisplayProgramHelp();
 	}
 
-	if(argc = 2 && strcmp(argv[1],"/help") == 0)
+	if(argc == 2 && strcmp(argv[1],"/help") == 0)
 	{
 		DisplayProgramHelp();
 	}
-	if(argc = 2 && strcmp(argv[1],"-displayhelp") == 0)
+	if(argc == 2 && strcmp(argv[1],"-displayhelp") == 0)
 	{
 		DisplayProgramHelp();
 	}
-	if(argc = 2 && strcmp(argv[1],"--displaycommandhelp") == 0)
+	if(argc == 2 && strcmp(argv[1],"--displaycommandhelp") == 0)
 	{
 		DisplayProgramHelp();
 	}
+    else if (argc == 1)
+    {
+        std :: cout << "Your method of using this program is incorrect, please use the" << " /help " << "command to view the manual." << endl;
+        std :: cout << "你的使用本程序的方法不正确，请使用" << " /help " << "命令查看手册。" << endl;
+        system("Pause");
+        return 0;
+    }
 
   return 0;
 }
